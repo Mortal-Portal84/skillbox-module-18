@@ -26,7 +26,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /*place-items: center;*/
   min-width: 320px;
   min-height: 100vh;
 }
@@ -44,7 +44,7 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 button {
@@ -68,22 +68,31 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.row .image:not(:first-child) {
-  margin-left: 1em;
-}
-
 .wrapper {
-  padding: 0.8em;
   width: 500px;
   text-align: left;
-  border: solid 1px white;
-  border-radius: 0.5em;
 }
 
-#progress-bar {
+#progress-bar,
+#cats-progress,
+#dogs-progress {
   height: 20px;
   max-width: 500px;
   background-color: blue;
   transform: scaleX(0);
   transform-origin: left;
+}
+
+.wrapper {
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.row .image:not(:first-child) {
+  margin-left: 1em;
 }

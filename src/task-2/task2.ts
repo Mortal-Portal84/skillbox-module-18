@@ -2,7 +2,7 @@ import '../style.css'
 
 const app = document.querySelector('#app')
 
-const renderProgressBar = (time: number) => {
+const progress = (time: number) => {
   const wrapper = document.createElement('div')
   const progressBar = document.createElement('div')
   const timer = document.createElement('p')
@@ -40,4 +40,4 @@ const renderProgressBar = (time: number) => {
 }
 
 
-app?.appendChild(renderProgressBar(5))
+app?.appendChild(progress(5))
