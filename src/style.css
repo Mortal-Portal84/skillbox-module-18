@@ -82,6 +82,7 @@ button:focus-visible {
 
 .progress-bar {
   width: 0;
-  height: 1em;
+  max-width: 500px;
+  height: 20px;
   background-color: blue;
 }
